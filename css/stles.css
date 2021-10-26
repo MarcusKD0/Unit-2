@@ -1,0 +1,37 @@
+/* Navigation Bar Layout */
+
+nav{
+    background-color: yellow;
+    display: flex;
+    color: maroon;
+    height: 15vh;
+    margin: 0 0 5px;
+    outline: maroon 5px ridge;
+}
+.main-nav{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding:0 ;
+    width: 100%;
+    margin: 0;
+    font-weight: 800;
+    align-items: center;
+    font-size: 1.2em;
+}
+.nav-bar{
+    text-align: center;
+    flex: 1;
+    width: 100%;
+    outline: mediumaquamarine 2px solid;
+    padding:0 calc(25vw - content-width);
+}
+#name{
+    flex-grow: 2;
+    font-size: 2em;
+}
+/* Images Layout */
+
+img{
+    width: 100vw;
+}
