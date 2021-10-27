@@ -1,12 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
 /* Navigation Bar Layout */
 
 nav{
-    background-color: yellow;
+    background-color: black;
     display: flex;
-    color: maroon;
+    color: aqua;
     height: 15vh;
     margin: 0 0 5px;
-    outline: maroon 5px ridge;
+    outline: aqua 5px ridge;
 }
 .main-nav{
     list-style: none;
@@ -30,8 +34,85 @@ nav{
     flex-grow: 2;
     font-size: 2em;
 }
+
+/* Header styles */
+
+header{
+    text-align: center;
+}
+
 /* Images Layout */
 
 img{
     width: 100vw;
+}
+
+/* Main Content Style */
+
+#main-cont{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#portfolio{
+    background-color: aqua;
+    text-align: center;
+}
+
+/* Contacts style */
+
+#contacts{
+    text-align: center;
+    background-color: black;
+    color: aqua;
+    outline: aqua 2px ridge;
+}
+
+/* Footer Styles */
+
+footer{
+    background-color: aqua;
+    outline: black 2px solid;
+    margin-top: -1.5vh;
+    font-weight: 700;
+}
+.foot-nav{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+/* Media Query */
+
+@media (min-width: 768px) {
+img {
+    width: 47vw;
+}
+.main-nav{
+    flex-direction: row;
+}
+.nav-bar{
+    width: 25%;
+}
+#name{
+    width: 100%;
+}
+}
+
+
+@media (min-width:1024px) {
+
+    img{
+        width: 32vw;
+    }
 }
