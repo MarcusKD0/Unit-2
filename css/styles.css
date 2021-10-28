@@ -42,7 +42,6 @@ nav{
     flex: 1;
     width: 100%;
     outline: midnightblue 2px solid;
-    padding:0 calc(25vw - content-width);
 }
 #name{
     flex-grow: 2;
