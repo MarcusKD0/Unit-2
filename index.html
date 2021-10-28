@@ -4,6 +4,9 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/stles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Carattere&family=Irish+Grover&family=Lobster&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -13,50 +16,62 @@
             <li class="nav-bar"><a href="#">Home</a></li>
             <li class="nav-bar"><a href="#portfolio">Portfolio</a></li>
             <li class="nav-bar"><a href="#contacts">Contact</a></li>
+            <li class="nav-bar"><a href="#skills">Skills</a></li>
         </ul>
     </nav>
     <header>
             <img src="images/responsive-layout-profile.png" alt="profile pic">
-            <h1>This is placement text for now</h1>
-            <p>This is a placeholder sentence to be replaced later when I am ready</p>
+        <div id="head-text">
+            <h1>My name is Marcus Deluca</h1>
+            <p>I am a front-end developer who uses css html and javascript. I learned these languages from teamtreehouse techdegree program and plan to use these skills in order to become a developer for a web design firm </p>
+        </div> 
     </header>
     <main>
             <h2 id="portfolio">Portfolio</h2>
         <div id="main-cont">
             <section class="cont">
                 <img src="images/portfolio-1.png" alt="portfolio 1">
-                <h3>sample text</h3>
-                <p>This is a placeholder sentence to be replaced later when I am ready</p>
+                <h3>Marketing Page</h3>
+                <p>This is an example of a Marketing Page. </p>
             </section>
             <section class="cont">
                 <img src="images/portfolio-2.png" alt="portfolio 2">
-                <h3>sample text</h3>
-                <p>This is a placeholder sentence to be replaced later when I am ready</p>
+                <h3>Search Page</h3>
+                <p>This is a Search Page used to search a database. </p>
             </section>
             <section class="cont">
                 <img src="images/portfolio-3.png" alt="portfolio 3">
-                <h3>sample text</h3>
-                <p>This is a placeholder sentence to be replaced later when I am ready</p>
+                <h3>Travel App</h3>
+                <p>This is a app to help with travel.  </p>
             </section>
             <section class="cont">
                 <img src="images/portfolio-4.png" alt="portfolio 4">
-                <h3>sample text</h3>
-                <p>This is a placeholder sentence to be replaced later when I am ready</p>
+                <h3>Map of Favorite Spots</h3>
+                <p>This is a map of my favorite spots.</p>
             </section>
             <section class="cont">
                 <img src="images/portfolio-5.png" alt="portfolio 5">
-                <h3>sample text</h3>
-                <p>This is a placeholder sentence to be replaced later when I am ready</p>
+                <h3>Photo Gallery</h3>
+                <p>This is a gallery of photos. </p>
             </section>
             <section class="cont">
                 <img src="images/portfolio-6.png" alt="potfolio 6">
-                <h3>sample text</h3>
-                <p>This is a placeholder sentence to be replaced later when I am ready</p>
+                <h3>Calculator</h3>
+                <p>This is a tool you can use to enter information and find an answer.</p>
             </section>
         </div>
     </main>
+    <section id="skills">
+        <h2 id="skill-header">Skills</h2>
+        <ul id="skill-list">
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>Javascript</li>
+        </ul>
+
+    </section>
     <section id="contacts">
-        <h2>Contacts</h2>
+        <h2 id="contacts-header">Contacts</h2>
         <p>(123)456-7890</p>
         <p>Pretendemail@fake.com</p>
         <p>234 567St<br>
@@ -66,7 +81,7 @@
     <footer>
         <ul class="foot-nav">
             <li>Marcus Deluca</li>
-            <li><a href="#">Back to top</a></li>
+            <li><a href="#"  id="footer-link">Back to top</a></li>
         </ul>
     </footer>
 

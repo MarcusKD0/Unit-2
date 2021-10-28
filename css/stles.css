@@ -1,16 +1,30 @@
 *{
     box-sizing: border-box;
 }
-
+a{
+    color: midnightblue;
+}
+a:hover{
+    color: purple;
+}
+h1{
+    font-family: "Carattere", cursive;
+}
+h2{
+    font-family: "Carattere", cursive;
+}
+h3{
+    font-family: "Irish Grover", cursive;
+}
 /* Navigation Bar Layout */
 
 nav{
-    background-color: black;
+    background-color: rgb(68, 68, 68);
     display: flex;
-    color: aqua;
+    color: midnightblue;
     height: 15vh;
     margin: 0 0 5px;
-    outline: aqua 5px ridge;
+    outline: midnightblue 5px ridge;
 }
 .main-nav{
     list-style: none;
@@ -27,7 +41,7 @@ nav{
     text-align: center;
     flex: 1;
     width: 100%;
-    outline: mediumaquamarine 2px solid;
+    outline: midnightblue 2px solid;
     padding:0 calc(25vw - content-width);
 }
 #name{
@@ -60,13 +74,38 @@ img{
     text-align: center;
 }
 
+
+/* Skills style */
+
+#skills{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#skill-list{
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin-top: 0;
+}
+#skill-header{
+    margin-bottom: .5em;
+}
+
+
 /* Contacts style */
 
 #contacts{
     text-align: center;
-    background-color: black;
-    color: aqua;
-    outline: aqua 2px ridge;
+    background-color: rgb(68, 68, 68);
+    color: midnightblue;
+    outline: midnightblue 2px ridge;
+    margin-top: 0;
+}
+#contacts-header{
+    text-decoration: underline;
+    margin-top: 0;
 }
 
 /* Footer Styles */
@@ -82,6 +121,12 @@ footer{
     display: flex;
     justify-content: space-around;
 }
+#footer-link{
+    color: black;
+}
+#footer-link:hover{
+    color: purple;
+}
 
 .cont{
     display: flex;
@@ -95,24 +140,88 @@ footer{
 /* Media Query */
 
 @media (min-width: 768px) {
-img {
+
+    img {
     width: 47vw;
+}
+a{
+    color: aqua;
+}
+h1{
+    font-family: "Lobster", cursive;
+}
+nav{
+    height: 10vh;
+    background-color: black;
+    color: aqua;
+    outline-color: aqua;
 }
 .main-nav{
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .nav-bar{
-    width: 25%;
+    outline: none;
+    flex: 0 0 15%;
 }
 #name{
-    width: 100%;
+    flex-basis: 100%;
+}
+header{
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 1;
+}
+#head-text{
+    flex-grow: 2;
+    align-self: center;
+}
+#contacts-header{
+    font-size: 1.75em;
+    margin-bottom: 1rem;
+}
+#skills{
+    margin-bottom: 0;
+}
+#skill-header{
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+#skill-list{
+    font-size: 1.5em;
+    margin: 1rem;
 }
 }
 
 
 @media (min-width:1024px) {
 
+    nav{
+        height: 3vh;
+    }
     img{
         width: 32vw;
+    }
+    .main-nav{
+        flex-wrap: nowrap;
+    }
+    .nav-bar{
+        justify-content: flex-end;
+    }
+    #name{
+        flex:.75;
+        font-size: 1em;
+        margin-right: auto;
+    }
+    .cont{
+        justify-content: flex-start;
+    }
+    #contacts-header{
+        font-size: 2em;
+    }
+    #skill-header{
+        font-size: 3em;
+        font-weight: 900;
     }
 }
